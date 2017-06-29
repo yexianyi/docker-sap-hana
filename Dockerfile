@@ -1,6 +1,8 @@
 # This docker file is for creating CentOS7 + JDK1.8
 FROM yexianyi/oracle-jdk:centos7
 
+ARG SAP_HANA_VERSION=HANA_EXPRESS_20
+ARG SAP_HANA_MASTER_PWD=Hawaii123
 ARG SAP_INSTALL_FILE=hxe.tgz
 ARG SAP_INSTALL_PATH=/opt/sap/
 ARG SAP_INSTSLL_TEMP=$SAP_INSTALL_PATH/temp
