@@ -14,7 +14,7 @@ MAINTAINER Xianyi Ye <https://cn.linkedin.com/in/yexianyi>
 
 # Install utils
 RUN  zypper addrepo http://download.opensuse.org/repositories/network:utilities/openSUSE_Leap_42.2/network:utilities.repo \
-  && zypper --non-interactive refresh \
+  && zypper --non-interactive --gpg-auto-import-keys refresh \
   && zypper install -y megatools \
   && wget $MEGATOOLS_DOWNLOAD_LINK \
   && rpm -Uvh $MEGATOOLS_FILE_NAME \
