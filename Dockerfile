@@ -21,7 +21,9 @@ RUN  yum -y update \
   && yum install -y fuse-libs \
   && yum install -y glib-networking \
   && wget $MEGATOOLS_DOWNLOAD_LINK \
-  && rpm -Uvh MEGATOOLS_FILE_NAME \
+  && rpm -Uvh $MEGATOOLS_FILE_NAME \
+  && yum clean all \ 
+  && yum autoremove -y \
   
   # Install SAP HANA 2.0 EXPRESSION
   && mkdir $SAP_INSTALL_PATH \
