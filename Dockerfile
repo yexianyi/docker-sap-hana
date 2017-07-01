@@ -27,3 +27,5 @@ RUN  zypper addrepo http://download.opensuse.org/repositories/network:utilities/
   && rm -rf /var/cache/zypp/* \
   && rm -rf /root/.cache/ \
   && rm -rf *\
+  
+EXPOSE 4390 8090 39013 39015 39018 59013 59014
