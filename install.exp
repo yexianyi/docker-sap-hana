@@ -6,11 +6,13 @@ set host_name [exec cat /etc/hostname]
 spawn "./setup_hxe.sh"
 
 expect "HANA_EXPRESS_20]:" { send "\n" }
-expect "]:" {send "$host_name\n"}
+expect "]:" {send "\n"}
 expect "]:" {send "\n"}
 expect "]:" {send "\n"}
 expect "password:" {send "Pwd$host_name\n"}
 expect "password:" {send "Pwd$host_name\n"}
 expect "Proceed with installation? (Y/N) :" {send "Y\n"}
+
+spawn "rm -rf /home/*"
 
 interact
