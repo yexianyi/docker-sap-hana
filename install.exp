@@ -1,11 +1,11 @@
 #!/usr/bin/expect
 
-set timeout 20
+#set timeout 20
 set host_name [exec cat /etc/hostname]
 
 spawn "./setup_hxe.sh"
 
-expect "install/HANA_EXPRESS_20]:" { send "\n" }
+expect "HANA_EXPRESS_20]:" { send "\n" }
 expect "]:" {send $host_name"\n"}
 expect "]:" {send "\n"}
 expect "]:" {send "\n"}
