@@ -16,6 +16,7 @@ RUN  zypper addrepo http://download.opensuse.org/repositories/network:utilities/
   && zypper install -y megatools \
   && zypper install -y numactl \
   && zypper install -y libltdl7 \
+  && zypper install -y hostname \
   
   # Install SAP HANA 2.0 EXPRESSION
   && megadl $SAP_INSTALL_PACKAGE \
