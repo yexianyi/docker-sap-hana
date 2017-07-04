@@ -1,25 +1,24 @@
 # yexianyi/sap-hana [![](https://images.microbadger.com/badges/image/yexianyi/sap-hana.svg)](https://microbadger.com/images/yexianyi/sap-hana "Get your own image badge on microbadger.com") [![](https://images.microbadger.com/badges/version/yexianyi/sap-hana.svg)](https://microbadger.com/images/yexianyi/sap-hana "Get your own version badge on microbadger.com")
 
-**Notification:**
-1. Pls make sure Memory Allocation is greater than 4 GB at least (8G is better) before launch container.
-2. After the container launched, several mins would be consumed because of performing SAP HANA installation.
+###Notification:### </br>
+1. Pls make sure Memory Allocation is greater than 4 GB at least (8G is better) before launch container. </br>
+2. After the container launched, several mins would be consumed because of performing SAP HANA installation. </br>
 
-**Quick Start:**
+###Quick Start:### </br>
 docker run -P -d yexianyi/sap-hana
 
-**JDBC Connection Info**
-Url: jdbc:sap://localhost:39015/
-Database: HXE
-Username: system
-Password: Pwd+{$container_id}
+###JDBC Connection Info### </br>
+Url: jdbc:sap://localhost:39015/ </br>
+Database: HXE </br>
+Username: system </br>
+Password: Pwd+{$container_id} </br>
 
-**Exposed ports**
-4390 8090 39013 39015 39018 59013 59014
+###Exposed ports### </br>
+4390 8090 39013 39015 39018 59013 59014 </br>
 
-**Other info**
-##############################################################################
-# Summary before execution                                                   #
-##############################################################################
+###Other info###
+####Summary before execution ####
+
 HANA, express edition installer : /home/HANA_EXPRESS_20
   Component(s) to install       : HANA server + Application Function Library
   Host name                     : b9c24eaee6e2
@@ -27,10 +26,7 @@ HANA, express edition installer : /home/HANA_EXPRESS_20
   HANA instance number          : 90
   Master password               : Pwdb9c24eaee6e2
 
-
-##############################################################################
-# Summary before execution:                                                  #
-##############################################################################
+#### Summary before execution: ####
 
 SAP HANA Express Edition System Installation
    Installation Parameters
