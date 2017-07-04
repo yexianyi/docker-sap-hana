@@ -21,6 +21,9 @@ RUN  zypper addrepo http://download.opensuse.org/repositories/network:utilities/
   # Install SAP HANA 2.0 EXPRESSION
   && megadl $SAP_INSTALL_PACKAGE \
   && tar -xzvf $SAP_INSTALL_FILE_NAME \
+  && echo "exit(0)" > HANA_EXPRESS_20/DATA_UNITS/HDB_SERVER_LINUX_X86_64/server/HanaHwCheck.py \
+  && echo "exit(0)" > HANA_EXPRESS_20/DATA_UNITS/HDB_SERVER_LINUX_X86_64/server/HanaHwCheck.py \
+  && chmod 755 HANA_EXPRESS_20/DATA_UNITS/HDB_SERVER_LINUX_X86_64/server/HanaHwCheck.py \
   
   && zypper clean \
   && rm -rf /var/cache/zypp/* \
