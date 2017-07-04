@@ -1,6 +1,6 @@
 #!/usr/bin/expect
 
-#set timeout 20
+set timeout -1
 set host_name [exec cat /etc/hostname]
 
 spawn "./setup_hxe.sh"
@@ -12,7 +12,5 @@ expect "]:" {send "\n"}
 expect "password:" {send "Pwd$host_name\n"}
 expect "password:" {send "Pwd$host_name\n"}
 expect "Proceed with installation? (Y/N) :" {send "Y\n"}
-
-spawn "rm -rf /home/*"
-
-interact
+expect ":/home #" {send "rm -rf /home/*"}
+#interact
