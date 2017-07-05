@@ -25,10 +25,10 @@ RUN  zypper addrepo http://download.opensuse.org/repositories/network:utilities/
   #&& chmod 755 HANA_EXPRESS_20/DATA_UNITS/HDB_SERVER_LINUX_X86_64/server/HanaHwCheck.py \
   && expect install.exp \
   
-  && zypper clean \
-  && rm -rf /var/cache/zypp/* \
-  && rm -rf /root/.cache/ \
-  && rm -rf *\
+  #&& zypper clean \
+  #&& rm -rf /var/cache/zypp/* \
+  #&& rm -rf /root/.cache/ \
+  #&& rm -rf *\
   
 EXPOSE 4390 8090 39013 39015 39018 59013 59014
 #CMD ["expect","/home/install.exp"]
