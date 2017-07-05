@@ -13,5 +13,6 @@ expect "password:" {send "Pwd$host_name\n"}
 expect "password:" {send "Pwd$host_name\n"}
 expect "Proceed with installation? (Y/N) :" {send "Y\n"}
 expect "home #" {send "rm -rf /home/*\n"}
+expect eof
 
 #interact
