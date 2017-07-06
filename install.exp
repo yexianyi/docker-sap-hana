@@ -9,10 +9,10 @@ expect "HANA_EXPRESS_20]:" { send "\n" }
 expect "]:" {send "\n"}
 expect "]:" {send "\n"}
 expect "]:" {send "\n"}
-expect "password:" {send "Pwd$host_name\n"}
-expect "password:" {send "Pwd$host_name\n"}
+expect "password:" {send "Kill1234\n"}
+expect "password:" {send "Kill1234\n"}
 expect "Proceed with installation? (Y/N) :" {send "Y\n"}
-expect "home #" {send "rm -rf /home/*\n"}
-expect eof
+#expect "home #" {send "rm -rf /home/*\n"}
+#expect eof
 
 #interact
