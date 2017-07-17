@@ -6,5 +6,5 @@
    REMEMBER: The memory mentioned here does NOT mean the param "--memory=" you set in "docker run" command, but the entire Docker Platform's which could be configured in Docker Platform Preferences</br>
 
 <h3>Quick Start:</h3>
-1. docker run -d yexianyi/sap-hana:install
+1. docker run -d yexianyi/sap-hana:install </br>
 2. ./setup_hxe.sh
